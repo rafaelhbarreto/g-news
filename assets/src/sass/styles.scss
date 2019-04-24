@@ -18,6 +18,11 @@ ul{
     list-style: none;  
 } 
 
+a{
+    text-decoration: none; 
+    color: #242424;
+}
+
 img{
     width: 100%;
 }
@@ -149,6 +154,63 @@ img{
     margin-top: 3px;
 }
 
+.see-more{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.see-more__link{
+    color: #4285f4;
+    font-size: 1rem;
+}
+
+.see-more__faces{
+    color: #b5b9bf;
+    display: inline-block;
+    font-size: .75em;
+    font-weight: 400;
+    margin-right: 10px;
+    display: none;
+}
+
+@media screen and (min-width: 350px){
+    .see-more__faces{
+        display: block;
+    }
+}
+
+.see-more__faces--happy{
+    font-size: 1rem;
+    color: #34a853;
+    margin: 5px 3px 0;
+}
+
+.see-more__faces--sad{
+    font-size: 1rem;
+    color: #ea4335;
+}
+
+// --
+// Footer
+// --
+
+footer{
+    align-items: center;
+    border-top: 1px solid #ebeff4; 
+    bottom: 0;
+    color: #ccc;
+    display: flex; 
+    font-size: .85rem;
+    height: 50px; 
+    justify-content: center;
+    position: absolute; 
+    width: 100%;
+}
+
+
 //
 // from md devices.
 //
@@ -181,13 +243,17 @@ img{
         grid-template-rows: minmax(24px,110px) auto 40px;
     }
 
-    .articles article{
+    .articles article {
         margin-bottom: 20px;
     }
 
-    .articles article{
+    .articles article.has-photo a{
         display: grid;
         grid-template-columns: 135px auto;
+    }
+
+    .articles article a:hover{
+        text-decoration: none;
     }
 
     .article__wrap{

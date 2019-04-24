@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>	
-	<meta charset="utf-8" /> 
-	<title>Google News</title>
+    
+    <title>Google News</title>
 	
+    <!--  Meta Tags -->
+
+    <meta charset="utf-8" /> 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, inicial-scale=1.0, maximum-scale=1.0, target-densitydpi=device-dpi" />
-	<meta name="keywords" content="keywords, para, a, pagina" />
-	<meta name="description" content="descrição da página" /> 
-	<meta name="author" content="Nome do autor da página" />
+	<meta name="keywords" content="keywords" />
+	<meta name="description" content="description" /> 
+	<meta name="author" content="Author name" />
 	<meta name="robots" content="index,follow" />
-	<meta name="url" content="http://www.websiteaddrress.com" />
+	<meta name="url" content="http://www.gnews.com" />
 	<meta http-equiv="Pragma" content="no-cache" />
 	<meta http-equiv="Cache-Control" content="no-cache" />
 	
@@ -21,8 +24,10 @@
 	<meta name="og:url" content="http://www.imdb.com/title/tt0117500/" />
 	<meta name="og:image" content="http://ia.media-imdb.com/rock.jpg" />
 	<meta name="og:site_name" content="IMDb" />
-	<meta name="og:description" content="A group of U.S. Marines, under command of..." />
-	
+	<meta name="og:description" content="A little projet to learn CSS Grid Layout" />
+    
+    <!-- Styles -->
+
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<link type="text/css" rel="stylesheet" media="screen" href="assets/dist/css/styles.min.css" />
@@ -57,49 +62,62 @@
     
         <main>
             <div class="container">
-
                 <div class="box-articles grid">
                     <div class="title">
                         <h3 class="title__text">Trending News Articles</h3>
                         <a href="#" class="title__link"><i class="fas fa-rss"></i></a>
                     </div>           
                     <section class="articles">
-                        <article>
-                            <picture>
-                                <img src="assets/dist/img/ship.jpg" alt="Ship image" title="A big ship">
-                            </picture>
-                            <div class="article__wrap">
-                                <h4 class="article__title">Coast Guard Searches for Missing ...</h4>
-                                <span class="article__newspapper"> ABC News <span class="article__time">- 3 hours ago</span></span>
-                                <p class="article__excerpt">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum repudiandae beatae esse porro reprehenderit magni?
-                                </p>
-                            </div>
+                        <article class="has-photo">
+                            <a href="#">
+                                <picture>
+                                    <img src="assets/dist/img/ship.jpg" alt="Ship image" title="A big ship">
+                                </picture>
+                                <div class="article__wrap">
+                                    <h4 class="article__title">Coast Guard Searches for Missing ...</h4>
+                                    <span class="article__newspapper"> ABC News <span class="article__time">- 3 hours ago</span></span>
+                                    <p class="article__excerpt">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum repudiandae beatae esse porro reprehenderit magni?
+                                    </p>
+                                </div>
+                            </a>
                         </article>   
-                        <article>
-                            <picture>
-                                <img src="assets/dist/img/ship.jpg" alt="Ship image" title="A big ship">
-                            </picture>
-                            <div class="article__wrap">
-                                <h4 class="article__title">Coast Guard Searches for Missing ...</h4>
-                                <span class="article__newspapper"> ABC News <span class="article__time">- 3 hours ago</span></span>
-                                <p class="article__excerpt">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum repudiandae beatae esse porro reprehenderit magni?
-                                </p>
-                            </div>
+                        <article class="has-photo">
+                            <a href="#">
+                                <picture>
+                                    <img src="assets/dist/img/ship.jpg" alt="Ship image" title="A big ship">
+                                </picture>
+                                <div class="article__wrap">
+                                    <h4 class="article__title">Coast Guard Searches for Missing ...</h4>
+                                    <span class="article__newspapper"> ABC News <span class="article__time">- 3 hours ago</span></span>
+                                    <p class="article__excerpt">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum repudiandae beatae esse porro reprehenderit magni?
+                                    </p>
+                                </div>
+                            </a>
                         </article>   
-                        <article>
-                            <picture>
-                                <img src="assets/dist/img/ship.jpg" alt="Ship image" title="A big ship">
-                            </picture>
-                            <div class="article__wrap">
-                                <h4 class="article__title">Coast Guard Searches for Missing ...</h4>
-                                <span class="article__newspapper"> ABC News <span class="article__time">- 3 hours ago</span></span>
-                                <p class="article__excerpt">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum repudiandae beatae esse porro reprehenderit magni?
-                                </p>
-                            </div>
+                        <article class="has-photo">
+                            <a href="#">
+                                <picture>
+                                    <img src="assets/dist/img/ship.jpg" alt="Ship image" title="A big ship">
+                                </picture>
+                                <div class="article__wrap">
+                                    <h4 class="article__title">Coast Guard Searches for Missing ...</h4>
+                                    <span class="article__newspapper"> ABC News <span class="article__time">- 3 hours ago</span></span>
+                                    <p class="article__excerpt">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum repudiandae beatae esse porro reprehenderit magni?
+                                    </p>
+                                </div>
+                            </a>
                         </article>   
+                    </section>
+                    <section class="see-more">
+                        <a href="#" class="see-more__link">See more trending news</a>
+                        <span class="see-more__faces">
+                            your thoughts?
+                            <a href="#" class="see-more__faces--happy"><i class="far fa-smile-beam"></i></a>
+                            <a href="#" class="see-more__faces--sad"><i class="far fa-frown"></i></a>
+                        </span>
                     </section>
                 </div>
                 <!-- /news-articles -->
@@ -111,41 +129,52 @@
                     </div>           
                     <section class="articles">
                         <article>
-                            <picture>
-                                <img src="assets/dist/img/ship.jpg" alt="Ship image" title="A big ship">
-                            </picture>
-                            <div class="article__wrap">
-                                <h4 class="article__title">Coast Guard Searches for Missing ...</h4>
-                                <span class="article__newspapper"> ABC News <span class="article__time">- 3 hours ago</span></span>
-                                <p class="article__excerpt">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum repudiandae beatae esse porro reprehenderit magni?
-                                </p>
-                            </div>
+                            <a href="#">
+                                <div class="article__wrap">
+                                    <h4 class="article__title">Coast Guard Searches for Missing ...</h4>
+                                    <span class="article__newspapper"> ABC News <span class="article__time">- 3 hours ago</span></span>
+                                    <p class="article__excerpt">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum repudiandae beatae esse porro reprehenderit magni?
+                                    </p>
+                                </div>
+                            </a>
                         </article>   
                         <article>
-                            <picture>
-                                <img src="assets/dist/img/ship.jpg" alt="Ship image" title="A big ship">
-                            </picture>
-                            <div class="article__wrap">
-                                <h4 class="article__title">Coast Guard Searches for Missing ...</h4>
-                                <span class="article__newspapper"> ABC News <span class="article__time">- 3 hours ago</span></span>
-                                <p class="article__excerpt">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum repudiandae beatae esse porro reprehenderit magni?
-                                </p>
-                            </div>
+                            <a href="#">
+                                <div class="article__wrap">
+                                    <h4 class="article__title">Coast Guard Searches for Missing ...</h4>
+                                    <span class="article__newspapper"> ABC News <span class="article__time">- 3 hours ago</span></span>
+                                    <p class="article__excerpt">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum repudiandae beatae esse porro reprehenderit magni?
+                                    </p>
+                                </div>
+                            </a>
                         </article>   
                         <article>
-                            <picture>
-                                <img src="assets/dist/img/ship.jpg" alt="Ship image" title="A big ship">
-                            </picture>
-                            <div class="article__wrap">
-                                <h4 class="article__title">Coast Guard Searches for Missing ...</h4>
-                                <span class="article__newspapper"> ABC News <span class="article__time">- 3 hours ago</span></span>
-                                <p class="article__excerpt">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum repudiandae beatae esse porro reprehenderit magni?
-                                </p>
-                            </div>
+                            <a href="#">
+                                <div class="article__wrap">
+                                    <h4 class="article__title">Coast Guard Searches for Missing ...</h4>
+                                    <span class="article__newspapper"> ABC News <span class="article__time">- 3 hours ago</span></span>
+                                    <p class="article__excerpt">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum repudiandae beatae esse porro reprehenderit magni?
+                                    </p>
+                                </div>
+                            </a>
                         </article>   
+                        <article>
+                            <a href="#">
+                                <div class="article__wrap">
+                                    <h4 class="article__title">Coast Guard Searches for Missing ...</h4>
+                                    <span class="article__newspapper"> ABC News <span class="article__time">- 3 hours ago</span></span>
+                                    <p class="article__excerpt">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum repudiandae beatae esse porro reprehenderit magni?
+                                    </p>
+                                </div>
+                            </a>
+                        </article>   
+                    </section>
+                    <section class="see-more">
+                        <a href="#" class="see-more__link">See more results </a>
                     </section>
                 </div>
                 <!-- /top-results -->
@@ -157,7 +186,7 @@
     
         <!-- /main -->
         <footer class="grid">
-    
+            &copy; 2019      
         </footer>
         <!-- /footer -->
 

@@ -70,6 +70,9 @@ img {
   transform: rotate(90deg);
   width: 100%; }
 
+main {
+  margin-bottom: 80px; }
+
 .box-articles {
   grid-template-rows: minmax(40px, auto) auto 40px; }
 
@@ -154,14 +157,12 @@ img {
 footer {
   align-items: center;
   border-top: 1px solid #ebeff4;
-  bottom: 0;
   color: #ccc;
   display: flex;
   font-size: .85rem;
   height: 50px;
   justify-content: center;
-  position: absolute;
-  width: 100%; }
+  margin-top: 150px; }
 
 @media (min-width: 768px) {
   .title {
@@ -188,4 +189,7 @@ footer {
   .articles article a:hover {
     text-decoration: none; }
   .article__wrap {
-    padding: 0 15px; } }
+    padding: 0 15px; }
+  footer {
+    position: absolute;
+    width: 100%; } }
